@@ -1,6 +1,6 @@
 # Neural Network
 
-Neural network build from scratch in python using only numpy. It provides cli to interact with neural network.
+Neural network for recognizing handwritten digits build from scratch in python using only numpy. It provides cli to interact with neural network.
 Thanks to [3blue1brown](https://www.3blue1brown.com/) astonishing youtube playlist about [neural network](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) I tried to make simple neural network from scratch, implementing my own backpropagation.
 To visualize results I used [CS50 code](https://github.com/KevinLiTian/Harvard_CS50_AI/blob/main/5.Neural_Networks/examples/digits/recognition.py) to enable user to draw digits.
 
