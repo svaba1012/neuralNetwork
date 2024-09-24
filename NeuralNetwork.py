@@ -157,7 +157,7 @@ class NeuralNetwork:
                 # print("da", i, "=", dA[i])
                 dWavg[i] += dW[i]
                 dBavg[i] += dB[i]
-            # print("Finished " , num, " of ",  len(self.trainingData))
+            print("Finished " , num, " of ",  len(self.trainingData))
     
     def test(self):
         numOfCorrectAnswers = 0
@@ -190,7 +190,6 @@ class NeuralNetwork:
     
     def loadFromFile(self, filename: str):
         npzfile = np.load(filename)
-        print(len(npzfile.files))
         self.numOfLayers = len(npzfile.files) // 2 + 1
 
         self.z = [None]
