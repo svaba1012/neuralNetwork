@@ -4,9 +4,18 @@ Neural network for recognizing handwritten digits build from scratch in python u
 Thanks to [3blue1brown](https://www.3blue1brown.com/) astonishing youtube playlist about [neural network](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) I tried to make simple neural network from scratch, implementing my own backpropagation.
 To visualize results I used [CS50 code](https://github.com/KevinLiTian/Harvard_CS50_AI/blob/main/5.Neural_Networks/examples/digits/recognition.py) to enable user to draw digits.
 
+### Install python modules
+
+```
+pip install numpy
+pip install argparse
+pip install pygame
+```
+
 ### Usage
 
 > Run python3 main.py -h
+
 ```
 usage: NeuralNetwork [-h] [-f FILENAME] [-e EPOCH] [-bs BATCHSIZE] [-lr LEARNINGRATE] command
 
@@ -27,8 +36,18 @@ Size of batch for neural network training, default 10
 -lr LEARNINGRATE, --learningRate LEARNINGRATE
 Learning rate for neural network training, default 1.0
 
+
+
 Neural network built from scratch in python using only numpy
 ```
+
+Posible commands:
+
+- train - Traind neural net, use flags from help to congfigure train process
+- test - Test neural net on test set of data
+- gui - Manualy test neural net writing digits manualy
+
 ### Ways to improve
+
 - Currently backpropagation is calculated iteratively looping through each element. Implementing backpropagation using matrixes will speed up training process
 - ...
